@@ -15,12 +15,12 @@ public class SettingsPost {
         this.disableComments = disableComments;
     }
 
-    public boolean isAddSugnature() {
+    public boolean isAddSignature() {
         return addSignature;
     }
 
-    public void setAddSugnature(boolean addSugnature) {
-        this.addSignature = addSugnature;
+    public void setAddSignature(boolean addSignature) {
+        this.addSignature = addSignature;
     }
 
     public boolean isDisableNotifications() {

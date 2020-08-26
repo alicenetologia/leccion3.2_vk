@@ -3,8 +3,9 @@ package ru.netology.domain;
 public class CommentPost {
     private String commentPost;
     private String replyCommentPost;
-    private boolean shouldCloseCommentPost;
-    private boolean shouldOpenCommentPost;
+    private boolean canCloseCommentPost;
+    private boolean canOpenCommentPost;
+
 
     public String getCommentPost() {
         return commentPost;
@@ -22,19 +23,19 @@ public class CommentPost {
         this.replyCommentPost = replyCommentPost;
     }
 
-    public boolean isShouldCloseCommentPost() {
-        return shouldCloseCommentPost;
+    public boolean isCanCloseCommentPost() {
+        return canCloseCommentPost;
     }
 
-    public void setShouldCloseCommentPost(boolean shouldCloseCommentPost) {
-        this.shouldCloseCommentPost = shouldCloseCommentPost;
+    public void setCanCloseCommentPost(boolean canCloseCommentPost) {
+        this.canCloseCommentPost = canCloseCommentPost;
     }
 
-    public boolean isShouldOpenCommentPost() {
-        return shouldOpenCommentPost;
+    public boolean isCanOpenCommentPost() {
+        return canOpenCommentPost;
     }
 
-    public void setShouldOpenCommentPost(boolean shouldOpenCommentPost) {
-        this.shouldOpenCommentPost = shouldOpenCommentPost;
+    public void setCanOpenCommentPost(boolean canOpenCommentPost) {
+        this.canOpenCommentPost = canOpenCommentPost;
     }
 }

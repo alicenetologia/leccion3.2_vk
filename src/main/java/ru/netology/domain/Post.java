@@ -1,13 +1,16 @@
 package ru.netology.domain;
 
 public class Post {
-    private int id;
+    private int idPost;
 
     private int ownerIdPost;
     private int fromIdPost;
-    private int createrIDPost;
+    private int authorIdPost;
+
     private int timePost;
+
     private String textPost;
+
     private int replyOwnerId;
     private int replyPostId;
 
@@ -15,7 +18,7 @@ public class Post {
 
     private CommentPost commentPost;
 
-    private AttachmentPost attachmentPost;
+    private String attachmentPost;
 
     private boolean postLike;
     private int countLikes;
@@ -32,12 +35,13 @@ public class Post {
     private boolean canEditPost;
     private boolean canDeletePost;
 
-    public int getId() {
-        return id;
+
+    public int getIdPost() {
+        return idPost;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public void setIdPost(int idPost) {
+        this.idPost = idPost;
     }
 
     public int getOwnerIdPost() {
@@ -57,11 +61,11 @@ public class Post {
     }
 
     public int getAuthorIdPost() {
-        return createrIDPost;
+        return authorIdPost;
     }
 
     public void setAuthorIdPost(int authorIdPost) {
-        this.createrIDPost = authorIdPost;
+        this.authorIdPost = authorIdPost;
     }
 
     public int getTimePost() {
@@ -112,11 +116,11 @@ public class Post {
         this.commentPost = commentPost;
     }
 
-    public AttachmentPost getAttachmentPost() {
+    public String getAttachmentPost() {
         return attachmentPost;
     }
 
-    public void setAttachmentPost(AttachmentPost attachmentPost) {
+    public void setAttachmentPost(String attachmentPost) {
         this.attachmentPost = attachmentPost;
     }
 
